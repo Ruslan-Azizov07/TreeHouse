@@ -1,0 +1,32 @@
+// base styles
+@import 'settings/base';
+
+// components styles
+@import 'components/header';
+@import 'components/title-section';
+@import 'components/services-section';
+@import 'components/relax-section';
+@import 'components/project-section';
+@import 'components/values-section';
+@import 'components/clients-section';
+@import 'components/talk-section';
+@import 'components/logos-section';
+@import 'components/top-footer';
+@import 'components/bottom-footer';
+
+
+// adaptive styles
+@import 'adaptive/base';
+@import 'adaptive/header';
+@import 'adaptive/title-section';
+@import 'adaptive/services-section';
+@import 'adaptive/relax-section';
+@import 'adaptive/project-section';
+@import 'adaptive/values-section';
+@import 'adaptive/clients-section';
+@import 'adaptive/talk-section';
+@import 'adaptive/logos-section';
+@import 'adaptive/top-footer';
+@import 'adaptive/bottom-footer';
+
+

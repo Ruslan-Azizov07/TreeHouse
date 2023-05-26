@@ -1,0 +1,33 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+@import '../settings/mixins';
+
+.logos{
+    padding: 60px 0;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logos__item{
+        height: 45px;
+        width: 25%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:nth-child(1){
+            background-image: url('../images/logos-section/01.png');
+        }
+        &:nth-child(2){
+            background-image: url('../images/logos-section/02.png');
+        }
+        &:nth-child(3){
+            background-image: url('../images/logos-section/03.png');
+        }
+        &:nth-child(4){
+            background-image: url('../images/logos-section/04.png');
+        }
+    }
+}

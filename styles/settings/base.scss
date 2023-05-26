@@ -1,0 +1,112 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: $white;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 940px;
+    margin: auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+
+// base section styles
+.section{
+    padding: 100px 0;
+
+    &__header{
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    &__title{
+        @include without-serif;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $black;
+    }
+
+    &__subtitle{
+        color: $grey;
+        @include with-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+
+// green button
+.button-green{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    @include without-serif;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+    border-radius: 30px;
+    padding: 23px 35px;
+    transition: .2s;
+    
+    &:hover{
+        background-color: $white;
+        color: $black;
+    }
+}
+
+
+// cards list styles
+
+.cards__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards__item{
+    width: calc(33.33% - 10px);
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.cards__title{
+    text-align: center;
+    @include without-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 20px;
+}
+
+.cards__text{
+    text-align: center;
+    color: $grey;
+    @include with-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.green_text{
+    color: $green;
+}

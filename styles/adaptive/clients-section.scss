@@ -1,0 +1,41 @@
+@media screen and (max-width: 660px){
+    .clients-item{
+        flex-wrap: wrap;
+    }
+
+    .clients-item__box{
+        width: 100%;
+        margin: auto;
+
+        &_1{
+            margin-top: 40px;
+            margin-left: 0;
+        }
+
+        &_1::before{
+            border: 11px solid transparent;
+            border-bottom: 19px solid #f9f9f9;
+            top: -28px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &_2{
+            margin-bottom: 40px;
+            margin-right: 0;
+        }
+
+        &_2::before{
+            border: 11px solid transparent;
+            border-top: 19px solid #f9f9f9;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .clients-item__circle{
+        margin: auto;
+    }
+
+}

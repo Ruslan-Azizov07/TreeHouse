@@ -1,0 +1,119 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+@import '../settings/mixins';
+
+
+.top-footer{
+    padding: 60px 0;
+    background-color: $black;
+
+    &__columns{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__column{
+        margin-right: 20px;
+        max-width: calc(33.33% - 10px);
+
+        &:nth-child(2){
+            .column__link:hover{
+                color: $green;
+            }
+        }
+
+        &:last-child{
+            margin-right: 0;
+
+            .column__link:hover{
+                color: $green;
+            }
+        }
+    }
+
+    .column__title{
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        @include without-serif;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .column__item{
+        margin-bottom: 20px;
+
+        display: flex;
+        align-items: flex-start;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .column__left{
+        margin-right: 15px;
+    }
+
+    .column__right{
+
+    }
+
+    .column__img{
+        width: 25px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        &_1{
+            background-image: url('../images/top-footer/location.png');
+        }
+
+        &_2{
+            background-image: url('../images/top-footer/mobile.png');
+        }
+
+        &_3{
+            background-image: url('../images/top-footer/email.png');
+        }
+
+        &_4, &_6, &_7{
+            background-image: url('../images/top-footer/news.png');
+        }
+
+        &_5{
+            background-image: url('../images/top-footer/photo.png');
+        }
+
+        &_8{
+            background-image: url('../images/top-footer/media.png');
+        }
+
+        &_9, &_10{
+            background-image: url('../images/top-footer/twitter.png');
+        }
+    }
+
+    .column__link{
+        text-decoration: none;
+        color: #ececec;
+        @include with-serif;
+        font-size: 16px;
+        transition: .2s;
+    }
+
+    .column__hash{
+        color: #ececec;
+        @include with-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 5px 0 10px;
+    }
+
+    .column__time{
+        font-size: 12px;
+        @include with-serif;
+        color: #ececec;
+    }
+}

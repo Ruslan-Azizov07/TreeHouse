@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px){
+    .cards__item{
+        width: calc(50% - 10px);
+
+        &:last-child{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .section{
+        padding: 70px 0;
+
+        &__header{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    .cards__item{
+        width: 100%;
+        margin-top: 20px;
+
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+
+    .section{
+        padding: 45px 0;
+
+        &__header{
+            margin-bottom: 40px;
+        }
+
+        &__title{
+            font-size: 34px;
+        }
+    }
+}

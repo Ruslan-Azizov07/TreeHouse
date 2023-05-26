@@ -1,0 +1,18 @@
+@media screen and (max-width: 930px){
+    .values{
+
+        .values-cards__item{
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    .values{
+        &-cards__img{
+            margin-bottom: 15px;
+        }
+    }
+}

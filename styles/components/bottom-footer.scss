@@ -1,0 +1,80 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+@import '../settings/mixins';
+
+.bottom-footer{
+    padding: 30px 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__label{
+        @include without-serif;
+        font-size: 14px;
+        color: #555;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+
+        li{
+            margin-right: 9px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+
+    }
+
+    .list__icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $black;
+
+        background-position: center;
+        background-repeat: no-repeat;
+
+        transition: .2s;
+
+
+        &_1{
+            background-image: url('../images/bottom-footer/01.png');
+
+            &:hover{
+                background-color: #00aced;
+            }
+        }
+
+        &_2{
+            background-image: url('../images/bottom-footer/02.png');
+
+            &:hover{
+                background-color: #3b5998;
+            }
+        }
+
+        &_3{
+            background-image: url('../images/bottom-footer/03.png');
+
+            &:hover{
+                background-color: #cb2028;
+            }
+        }
+
+        &_4{
+            background-image: url('../images/bottom-footer/04.png');
+
+            &:hover{
+                background-color: #da2713;
+            }
+        }
+    }
+}

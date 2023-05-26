@@ -1,0 +1,30 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+@import '../settings/mixins';
+
+
+.services{
+    background-color: $white;
+    text-align: center;
+
+
+    &-cards__img{
+        height: 52px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-bottom: 40px;
+
+        &_1{
+            background-image: url('../images/services-section/01.png');
+        }
+
+        &_2{
+            background-image: url('../images/services-section/02.png');
+        }
+
+        &_3{
+            background-image: url('../images/services-section/03.png');
+        }
+    }
+}

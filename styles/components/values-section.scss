@@ -1,0 +1,48 @@
+.values{
+    background-color: #f9f9f9;
+    text-align: center;
+
+    
+
+    &-cards__img{
+        height: 95px;
+        width: 95px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        border: 4px solid $grey;
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &_1{
+            background-image: url('../images/values-section/01.png');
+        }
+
+        &_2{
+            background-image: url('../images/values-section/02.png');
+        }
+
+        &_3{
+            background-image: url('../images/values-section/03.png');
+        }
+    }
+
+    .values-cards__item{
+        position: relative;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 170px;
+            height: 2px;
+            background-color: #808080;
+            position: absolute;
+            top: 45px;
+            left: 220px;
+        }
+
+        &:last-child::after{
+            display: none;
+        }
+    }
+}

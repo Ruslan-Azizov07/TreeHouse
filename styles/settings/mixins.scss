@@ -1,0 +1,7 @@
+@mixin with-serif{
+    font-family: 'Roboto Slab', serif;
+}
+
+@mixin without-serif{
+    font-family: 'Montserrat', sans-serif;
+}
